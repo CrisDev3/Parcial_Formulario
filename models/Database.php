@@ -1,10 +1,9 @@
 <?php
-// models/Database.php
 class Database {
-    private $host = "127.0.0.1";   // o localhost
+    private $host = "127.0.0.1";   
     private $db   = "bd_evento";
     private $user = "root";
-    private $pass = "goosly10";            // ajusta si tienes password
+    private $pass = "goosly10";            
     public $pdo;
 
     public function __construct() {

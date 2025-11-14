@@ -1,5 +1,4 @@
 <?php
-// models/Pais.php
 class Pais {
     private $pdo;
     public function __construct($pdo) {

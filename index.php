@@ -3,12 +3,12 @@ require "controllers/FormController.php";
 
 $controller = new FormController();
 
-if (!isset($_GET["action"])) {
-    $controller->index();
+$action = $_GET['action'] ?? null;
+
+if ($action === 'guardar') {
+    $controller->guardar();
+} elseif ($action === 'reporte') {
+    $controller->reporte();
 } else {
-    if ($_GET["action"] == "guardar") {
-        $controller->guardar();
-    } elseif ($_GET["action"] == "reporte") {
-        $controller->reporte();
-    }
+    $controller->index();
 }

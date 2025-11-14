@@ -1,6 +1,5 @@
 <?php
-// views/formulario.php
-// Variables esperadas: $paises, $areas (si vienen del controller)
+
 function e($s)
 {
     return htmlspecialchars($s, ENT_QUOTES, 'UTF-8');
